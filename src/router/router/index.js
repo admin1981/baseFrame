@@ -6,13 +6,6 @@ var router=[
     component: resolve => require(['../../views/accessControl/groupManagement/index.vue'], resolve),
     meta:{requireAuth:true}
   },
-  //组详情
-  {
-    path: 'accessControl/groupManagement/detailSee/details',
-    name: 'GroupManagementDetails',
-    component: resolve => require(['../../views/accessControl/groupManagement/detailSee/details.vue'], resolve),
-    meta:{requireAuth:true}
-  },
   //策略列表
   {
     path: 'accessControl/strategyManagement/index',

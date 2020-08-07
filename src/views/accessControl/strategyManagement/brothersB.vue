@@ -1,36 +1,34 @@
 <template>
     <div>
-        <page-title title="eventBus" />
         <div class="page-container">
             <Card dis-hover style="border:0">
-                <brothersA />
+                
             </Card>
             <Card style='margin-top:20px'>
-              <brothersB />
+              <p slot="title">兄弟组件</p>
+              <p>字符串:{{msg}}</p>
             </Card>
         </div>
     </div>
 </template>
 
 <script>
-import brothersA from './brothersA'
-import brothersB from './brothersB'
 import {EventBus} from '../../../EventBus'
 export default {
-    components: { brothersA ,brothersB},
     data() {
         return {
-            name:'兄弟组件',
+            msg: '',
             loading: false,
         }
     },
     created() {
-
+       EventBus.$on("aMsg", (msg) => { 
+             this.msg = msg; 
+             //alert(msg)
+             });
     },
-    methods: {
-        sendMsg() { 
-            EventBus.$emit("aMsg", '来自A页面的消息'); 
-        }
+    mounted() {
+        
     }
 }
 </script>

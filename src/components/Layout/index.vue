@@ -3,10 +3,10 @@
     <Layout>
       <Sider class="menu-container" hide-trigger collapsible :collapsed-width="78" v-model="isCollapsed">
         <div class="logo-container">
-          <img src="../../assets/img/gitlogo.png">
+          <!-- <img src="../../assets/img/gitlogo.png"> -->
         </div>
         <div style="font-size:15px; color:#fff; line-height:50px; text-indent:25px">
-          访问控制台
+          VUE
         </div>
         <the-menu :is-collapsed="isCollapsed" />
       </Sider>
