@@ -1,0 +1,19 @@
+{   
+    "code": 200,
+    "data": [
+        {
+            "id":"1",
+          "name": "admin", 
+          "pass": "123456"
+        }
+    ]
+}
+
+{   
+    "status": 2,
+    "message":"mima cuo wu "
+    "data": [
+        {
+        }
+    ]
+}

@@ -1,0 +1,8 @@
+* {margin: 0; padding: 0; border: 0;}
+/*页面主体内容*/
+.page-container{ margin: 20px; }
+/*页面中table*/
+.ivu-table-wrapper{ margin: 20px 0; }
+.ivu-table-cell{ padding-left: 5px; padding-right: 0;}
+/*分页导航条*/
+.pagination-container{background: #fff; margin-top: -15px; height: 100px; padding-top: 20px;}
