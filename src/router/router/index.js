@@ -20,6 +20,27 @@ var router=[
     component: resolve => require(['../../views/accessControl/userManagement/index.vue'], resolve),
     meta:{requireAuth:true}
   },
+    //keepalive
+    {
+      path: 'accessControl/keepalive/index',
+      name: 'keepaliveIndex',
+      component: resolve => require(['../../views/accessControl/keepalive/index.vue'], resolve),
+      meta:{requireAuth:true, keepalive:true}
+    },
+    //生命周期函数理解
+    {
+      path: 'accessControl/cycle/index',
+      name: 'cycleIndex',
+      component: resolve => require(['../../views/accessControl/cycle/index.vue'], resolve),
+      meta:{requireAuth:true}
+    },
+    //数组的基本用法
+    {
+      path: 'accessControl/arrayList/index',
+      name: 'arrayIndex',
+      component: resolve => require(['../../views/accessControl/arrayList/index.vue'], resolve),
+      meta:{requireAuth:true}
+    },
 ]
 
 

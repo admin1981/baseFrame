@@ -15,7 +15,13 @@
         <!--header-->
         <the-header />
         <Content class="main-container">
-          <router-view></router-view>
+          <!--路由中 meta.keepAlive=true 就会被缓存-->
+          <keep-alive>
+              <router-view v-if="$route.meta.keepAlive"></router-view>
+          </keep-alive>
+          <keep-alive>
+              <router-view v-if="!$route.meta.keepAlive"></router-view>
+          </keep-alive>
         </Content>
       </Layout>
     </Layout>

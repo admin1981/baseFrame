@@ -1,34 +1,33 @@
 <template>
     <div>
-        <page-title title="eventBus" />
+        <page-title title="数组的基本用法" />
         <div class="page-container">
-            <Card dis-hover style="border:0">
-                <brothersA />
-            </Card>
             <Card style='margin-top:20px'>
-              <brothersB />
+              <p slot="title">向数组中添加元素：push</p>
+              <p>字符串:{{arrA}}</p>
             </Card>
         </div>
     </div>
 </template>
 
 <script>
-import brothersA from './brothersA'
-import brothersB from './brothersB'
-import {EventBus} from '../../../EventBus'
+import childForm from '../Components/childForm';
 export default {
-    components: { brothersA ,brothersB},
+    components: { childForm },
     data() {
         return {
-            name:'兄弟组件',
             loading: false,
+            arrA:[1,2,3],
+            k:'0000'
         }
     },
     created() {
 
+        var arrB = this.arrA.splice(1,0,"B","C")
+         alert(this.arrA)
     },
     methods: {
-        
+
     }
 }
 </script>

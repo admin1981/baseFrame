@@ -19,6 +19,21 @@ var menu = [
         menuName: "eventBusA",
         router: "StrategyList",
       },
+      {
+        index: "1-4",
+        menuName: "keepalive",
+        router: "keepaliveIndex",
+      },
+      {
+        index: "1-5",
+        menuName: "生命周期理解",
+        router: "cycleIndex",
+      },
+      {
+        index: "1-6",
+        menuName: "数组的基础用法",
+        router: "arrayIndex",
+      },
     ]
   },
 ]

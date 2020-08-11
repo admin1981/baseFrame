@@ -36,7 +36,7 @@ export default {
 
     },
     methods: {
-        childByValue: function (childValue) {
+        childByValue(childValue) {
         // childValue就是子组件传过来的值
         this.childName = childValue
       }
