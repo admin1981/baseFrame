@@ -1,44 +1,51 @@
 var router=[
-  //组列表
+  //父传子
   {
-    path: 'accessControl/groupManagement/index',
+    path: 'componentValue/fatherToSon/index',
     name: 'GroupList',
-    component: resolve => require(['../../views/accessControl/groupManagement/index.vue'], resolve),
+    component: resolve => require(['../../views/componentValue/fatherToSon/index.vue'], resolve),
     meta:{requireAuth:true}
   },
-  //策略列表
+  //evBus
   {
-    path: 'accessControl/strategyManagement/index',
+    path: 'componentValue/evBus/index',
     name: 'StrategyList',
-    component: resolve => require(['../../views/accessControl/strategyManagement/index.vue'], resolve),
+    component: resolve => require(['../../views/componentValue/evBus/index.vue'], resolve),
     meta:{requireAuth:true}
   },
-  //用户列表
+  //子传父
   {
-    path: 'accessControl/userManagement/index',
+    path: 'componentValue/sonToFather/index',
     name: 'UserList',
-    component: resolve => require(['../../views/accessControl/userManagement/index.vue'], resolve),
+    component: resolve => require(['../../views/componentValue/sonToFather/index.vue'], resolve),
     meta:{requireAuth:true}
   },
     //keepalive
     {
-      path: 'accessControl/keepalive/index',
+      path: 'keepalive/index',
       name: 'keepaliveIndex',
-      component: resolve => require(['../../views/accessControl/keepalive/index.vue'], resolve),
+      component: resolve => require(['../../views/keepalive/index.vue'], resolve),
       meta:{requireAuth:true, keepalive:true}
-    },
-    //生命周期函数理解
-    {
-      path: 'accessControl/cycle/index',
-      name: 'cycleIndex',
-      component: resolve => require(['../../views/accessControl/cycle/index.vue'], resolve),
-      meta:{requireAuth:true}
     },
     //数组的基本用法
     {
-      path: 'accessControl/arrayList/index',
+      path: 'arrayList/index',
       name: 'arrayIndex',
-      component: resolve => require(['../../views/accessControl/arrayList/index.vue'], resolve),
+      component: resolve => require(['../../views/arrayList/index.vue'], resolve),
+      meta:{requireAuth:true}
+    },
+    //过滤
+    {
+      path: 'filter/index',
+      name: 'filterIndex',
+      component: resolve => require(['../../views/filter/index.vue'], resolve),
+      meta:{requireAuth:true}
+    },
+    //计算
+    {
+      path: 'calculation/index',
+      name: 'calculationIndex',
+      component: resolve => require(['../../views/calculation/index.vue'], resolve),
       meta:{requireAuth:true}
     },
 ]

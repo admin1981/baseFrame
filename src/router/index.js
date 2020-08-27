@@ -10,7 +10,7 @@ var router = new VueRouter({
   routes:[
     {
       path: '/',
-      redirect: "/accessControl/groupManagement/index",
+      redirect: "/componentValue/fatherToSon/index",
       component: resolve => require(['@/components/layout/index.vue'], resolve),
       children: routers,
       meta: { requireAuth:true }

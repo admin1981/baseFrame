@@ -19,20 +19,53 @@ var menu = [
         menuName: "eventBusA",
         router: "StrategyList",
       },
+    ]
+  },
+  {
+    index: "2",
+    menuName: "缓存组件",
+    router: {},
+    children:[
       {
-        index: "1-4",
+        index: "2-1",
         menuName: "keepalive",
         router: "keepaliveIndex",
       },
+    ]
+  },
+  {
+    index: "3",
+    menuName: "数组用法",
+    router: {},
+    children:[
       {
-        index: "1-5",
-        menuName: "生命周期理解",
-        router: "cycleIndex",
-      },
-      {
-        index: "1-6",
+        index: "3-1",
         menuName: "数组的基础用法",
         router: "arrayIndex",
+      },
+    ]
+  },
+  {
+    index: "4",
+    menuName: "VUE过滤",
+    router: {},
+    children:[
+      {
+        index: "4-1",
+        menuName: "过滤",
+        router: "filterIndex",
+      },
+    ]
+  },
+  {
+    index: "5",
+    menuName: "计算属性",
+    router: {},
+    children:[
+      {
+        index: "5-1",
+        menuName: "购物车",
+        router: "calculationIndex",
       },
     ]
   },

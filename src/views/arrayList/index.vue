@@ -16,9 +16,7 @@
 </template>
 
 <script>
-import childForm from '../Components/childForm';
 export default {
-    components: { childForm },
     data() {
         return {
             loading: false,
